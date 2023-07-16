@@ -55,7 +55,6 @@ img {
 }
 
 
-/* Profile Section */
 
 .profile {
     padding: 5rem 0;
@@ -140,7 +139,6 @@ img {
     font-weight: 600;
 }
 
-/* Gallery Section */
 
 .gallery {
     display: flex;
@@ -203,7 +201,6 @@ img {
     object-fit: cover;
 }
 
-/* Loader */
 
 .loader {
     width: 5rem;
@@ -215,7 +212,6 @@ img {
     animation: loader 500ms linear infinite;
 }
 
-/* Media Query */
 
 @media screen and (max-width: 40rem) {
     .profile {
@@ -297,14 +293,12 @@ img {
     }
 }
 
-/* Spinner Animation */
 
 @keyframes loader {
     to {
         transform: rotate(360deg);
     }
 }
-
 
 @supports (display: grid) {
     .profile {
@@ -389,10 +383,7 @@ img {
           <% var Currentuser=JSON.parse(localStorage.getItem(user)) %>
           <% if(Currentuser==null) { %>
             <a href="/error">Error</a>
-            <% } %>
-
-          <!-- <% if(Currentuser!=null) { %> -->
-        
+            <% } %>        
                         <h1 class="profile-user-name"><%= auth_in_user.name %></h1>
                          
                         
@@ -421,7 +412,7 @@ img {
                     </div>
         
                 </div>
-            </div>    
+            </div>
         </header>
         
         <main>
@@ -440,9 +431,6 @@ img {
                          <p style="color: black;font-size: 20px;"><%= l%>  ...</p>
                          <% } %>
                        </div>
-        
-                        <!-- <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt=""> -->
-        
                         <div class="gallery-item-info">
                             <a href="/inbox/<%=post[i]._id%>" style="color: white;">
                             <ul>
