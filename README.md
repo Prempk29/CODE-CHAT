@@ -1,6 +1,6 @@
 # Code-Chat
  
-<h2>Deployment Link</h2>
+<h4>Deployment Link</h4>
 <a href="https://code-chat-qbxu.onrender.com/">View Deployment</a>
 
 <h2>Installation</h2>
